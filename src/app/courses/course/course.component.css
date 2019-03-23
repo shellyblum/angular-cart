@@ -1,0 +1,15 @@
+.card {
+    height: 310px;
+}
+
+.content.small {
+    font-size: 0.9em;
+}
+
+.button {
+    margin-right: 10px;
+}
+
+.summary {
+    height: 140px;
+}

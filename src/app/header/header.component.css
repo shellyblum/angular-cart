@@ -1,0 +1,16 @@
+.nav {
+  height: 50px;
+  border-bottom: 1px solid lightgray;
+  background: hsl(204, 86%, 53%)	
+}
+
+h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+}
+
+.tag {
+  margin-right: 1vw;
+  font-weight: bold;
+}

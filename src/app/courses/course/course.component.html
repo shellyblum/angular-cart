@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="card-content">
+        <p class="title is-4">{{course.name}}</p>
+        <div class="content summary">
+            {{course.summary}}
+        </div>
+        <div class="flex justify-between content small">
+            <div>
+                <div>
+                    Price: {{course.price}}$
+                </div>
+                <div>
+                    Level: {{course.level}}
+                </div>
+            </div>
+            <div class="flex">
+                <button class="button" (click)="removeFromCart()" [disabled]="!isItemInCart()">
+                    <span class="icon is-small">
+                        <i class="fas fa-minus"></i>
+                    </span>
+                </button>
+                <button class="button" (click)="addToCart()" [disabled]="isItemInCart()">
+                    <span class="icon is-small">
+                        <i class="fas fa-plus"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

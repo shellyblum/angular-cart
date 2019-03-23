@@ -1,0 +1,33 @@
+<div class="flex-col padding-y-15 padding-x-10">
+  <div class="flex tile">
+    <div class="field search is-vertical">
+      <div class="control">
+        <input class="input is-info" type="text" placeholder="Search Courses.." [formControl]="searchControl">
+      </div>
+    </div>
+    <div class="dropdown is-vertical">
+      <div class="dropdown-trigger">
+        <button class="sort button" aria-haspopup="true" aria-controls="dropdown-menu3">
+          <span>Sort By</span>
+          <span class="icon is-small">
+            <i class="fas fa-ellipsis-v"></i>
+          </span>
+        </button>
+      </div>
+      <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+        <div class="dropdown-content">
+          <a (click)="sortByLevel()" class="dropdown-item" aria-haspopup="true" aria-controls="dropdown-menu3">Level</a>
+          <a (click)="sortByPrice()" class="dropdown-item" aria-haspopup="true" aria-controls="dropdown-menu3">Price</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex content">
+    <div class="flex wrap width-70">
+      <app-course class="course-container" *ngFor="let course of coursesToShow" [course]="course"></app-course>
+    </div>
+    <div class="width-30">
+      <app-cart></app-cart>
+    </div>
+  </div>
+</div>

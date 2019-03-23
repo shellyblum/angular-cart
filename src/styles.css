@@ -1,0 +1,51 @@
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.width-30 {
+  width: 30%;
+}
+
+.width-70 {
+  width: 70%;
+}
+
+.padding-x-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.padding-y-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+}

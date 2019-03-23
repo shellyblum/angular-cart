@@ -1,0 +1,18 @@
+.search {
+  max-width: 200px;
+  margin: 0px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.course-container {
+  width: 48%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.sort.button {
+  margin-left: 5px;
+}
